@@ -19,7 +19,7 @@ echo $_LAST_TIME
 if [[ $(( $_LAST_TIME + $_DELAY )) < $(date +"%s") ]]
 then
 	echo $(date +"%s") > $_DELAY_FILE
-	mpack -s "發現變動 $(date +'%c')" $_PICTURE_PATH $_MAIL_ADDR
+	mpack -s "發現變動 $(date +'%c')" $_PICTURE_FILE $_MAIL_ADDR
 
 fi
 
